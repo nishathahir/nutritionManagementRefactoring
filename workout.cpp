@@ -5,7 +5,7 @@
 #include"workout.h"
 
 using namespace std;
-void Workout::Time()
+void Workout::Time() const
 {
     ifstream file;
     file.open("workout_time.txt");
@@ -17,17 +17,6 @@ void Workout::Time()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
         while(file.good())
         {
             getline(file,line);
@@ -39,7 +28,7 @@ void Workout::Time()
     system("cls");
 }
 
-void Workout::underweight_workout()
+void Workout::underweight_workout() const
 {
     cout<<"\n\t\t\t\t\t\tUnderweight can lead to several medical complications."<<endl;
     cout<<"\n\t\t\t\t\t\tExercises To Gain Weight: How To Bulk Up Muscle Mass Safely:"<<endl;
@@ -57,17 +46,7 @@ void Workout::underweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+        
         while(file.good())
         {
             getline(file,line);
@@ -87,17 +66,7 @@ void Workout::underweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+       
         while(file.good())
         {
             getline(file,line);
@@ -116,17 +85,7 @@ void Workout::underweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+       
         while(file.good())
         {
             getline(file,line);
@@ -145,17 +104,7 @@ void Workout::underweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+       
         while(file.good())
         {
             getline(file,line);
@@ -174,17 +123,7 @@ void Workout::underweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+        
         while(file.good())
         {
             getline(file,line);
@@ -203,17 +142,7 @@ void Workout::underweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+  
         while(file.good())
         {
             getline(file,line);
@@ -262,17 +191,7 @@ void Workout::underweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+       
         while(file.good())
         {
             getline(file,line);
@@ -285,7 +204,7 @@ void Workout::underweight_workout()
 
 }
 
-void Workout::normal_workout()
+void Workout::normal_workout() const
 {
     cout<<"\n\t\t\t\t\t\tGetting regular exercise and keeping your body fit helps lower your risk of chronic problems."<<endl;
     cout<<"\n\t\t\t\t\t\tAcross the board, physical activity and maintaining fitness usually helps."<<endl;
@@ -303,17 +222,6 @@ void Workout::normal_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
         while(file.good())
         {
             getline(file,line);
@@ -331,17 +239,7 @@ void Workout::normal_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+    
         while(file.good())
         {
             getline(file,line);
@@ -360,17 +258,7 @@ void Workout::normal_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+       
         while(file.good())
         {
             getline(file,line);
@@ -389,17 +277,7 @@ void Workout::normal_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+        
         while(file.good())
         {
             getline(file,line);
@@ -418,17 +296,6 @@ void Workout::normal_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
         while(file.good())
         {
             getline(file,line);
@@ -441,7 +308,7 @@ void Workout::normal_workout()
 }
 }
 
-void Workout::overweight_workout()
+void Workout::overweight_workout() const
 {
     cout<<"\n\t\t\t\t\t\tBeing obese can also increase your risk of developing many potentially serious health conditions including type 2 diabetes, high blood pressure, high cholesterol and heart diseases."<<endl;
     cout<<"\n\t\t\t\t\t\tCarrying extra fat leads to serious health consequences"<<endl;
@@ -458,17 +325,7 @@ void Workout::overweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+        
         while(file.good())
         {
             getline(file,line);
@@ -487,17 +344,7 @@ void Workout::overweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+        
         while(file.good())
         {
             getline(file,line);
@@ -516,17 +363,7 @@ void Workout::overweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+       
         while(file.good())
         {
             getline(file,line);
@@ -545,17 +382,10 @@ void Workout::overweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+        for (int j=0;j<5;j++){
+            cout<<"\n";
+
+        }
         while(file.good())
         {
             getline(file,line);
@@ -574,17 +404,7 @@ void Workout::overweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+        
         while(file.good())
         {
             getline(file,line);
@@ -603,17 +423,7 @@ void Workout::overweight_workout()
     else
     {
         string line;
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
-        cout<<"\n";
+       
         while(file.good())
         {
             getline(file,line);
