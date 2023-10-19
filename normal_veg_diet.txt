@@ -1,0 +1,46 @@
+		                   Dietchart for Normal BMI (Veg)
+------------------------------------------------------------------------------------------------
+
+Breakfast recommended:
+	[1] Idli/Dhal curry/Chutney(Cocunut/Groundnut/Tomato)
+	[2] Oatmeal/Banana
+	[3] Nuts    Almonds- 5
+		    Cashews- 5
+		    Dry Fig- 3
+		    Walnuts-3
+		    Dates- 4
+		    Milk- one glass
+	[4] Upma/Cocunut Chutney
+	[5] Uttapam/Dhal curry/Chutney(Cocunut/Groundnut/Tomato)
+	[6] Bread with Jam/one glass of Milk
+	[7] Rava Dosa/Chutney(Cocunut/Groundnut/Tomato)
+
+Lunch recommended:
+	[1] Chapathi/Sabji/Sprouts
+	[2] Rice / Cauli-Brocoli( Steamed Mash)
+	[3] Rice/Sambar/Rasam/Vegetable
+	[4] Rajma Chawal/Salad
+	[5] Chapathi/Carrot-Beetroot-Apple Steamed Mash
+	[6] Peas Pulao/Veg Curry
+	[7] Rice/Yoghurt/Vegetable
+
+Dinner recommended:
+	[1] Brown Rice/Vegetable Stew
+	[2] Brown Rice/Masala Bindi
+	[3] Dosa/Chutney(Coconut/Tomato)
+	[4] Salad/Curd
+	[5] Black Bean stuffed with Potato
+	[6] Grilled Soyabean Sandwich
+	[7] Multigrain Sandwich
+	
+Snacks recommended:
+	Can be taken after every 2-3 hours of your meal.
+	[1] Apple Slices / Peanut Butter
+	[2] Steamed Corn/Salt/Pepper
+	[3] Sprouted Granola 
+	[4] Roasted Pumpkin seeds
+	[5] Fruits
+	[6] Dark Chocolates
+	[7] Fruit Smoothies
+
+------------------------------------------------------------------------------------------------

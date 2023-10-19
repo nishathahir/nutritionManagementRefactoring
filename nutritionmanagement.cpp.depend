@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1584790679 source:e:\oops\nutrition system\nutritionmanagement.cpp\main.cpp
+
+1584877109 source:e:\oops\nutrition system\nutritionmanagement.cpp\nutrition.cpp
+	<iostream>
+	<string.h>
+	"nutrition.h"
+
+1584875867 e:\oops\nutrition system\nutritionmanagement.cpp\nutrition.h
+
