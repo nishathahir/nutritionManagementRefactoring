@@ -17,34 +17,34 @@ using namespace std;
     Workout W;
     CalorieCount C;
     system("Color 0A");
-    cout<<"    ________________________________________________________________________________________________   "<<endl;
+    cout<<"       "<<endl;
     cout<<"                                                                                                       "<<endl;
-    cout<<"    ------------------------------------------------------------------------------------------------   "<<endl;
-    cout<<"   |                                                                                                |"<<endl;
-    cout<<"   |                                                                                                |"<<endl;
-    cout<<"   |                                                                                                |"<<endl;
-    cout<<"   |                                                                                                |"<<endl;
-    cout<<"   |                                                                                                |"<<endl;
-    cout<<"   |                                 NUTRITION MANAGEMENT SYSTEM                                    |"<<endl;
-    cout<<"   |                                                                                                |"<<endl;
-    cout<<"   |                                                                                                |"<<endl;
-    cout<<"   |                                                                          -T.Nisha Fathima      |"<<endl;
-    cout<<"   |                                                                          -19PT14               |"<<endl;
-    cout<<"   |                                                                                                |"<<endl;
-    cout<<"   ------------------------------------------------------------------------------------------------   "<<endl;
-    cout<<"   ________________________________________________________________________________________________   "<<endl;
+    cout<<"       "<<endl;
+    cout<<"                                                                                                   "<<endl;
+    cout<<"                                                                                                   "<<endl;
+    cout<<"                                                                                                   "<<endl;
+    cout<<"                                                                                                   "<<endl;
+    cout<<"                                                                                                   "<<endl;
+    cout<<"                                    NUTRITION MANAGEMENT SYSTEM                                    "<<endl;
+    cout<<"                                                                                                   "<<endl;
+    cout<<"                                                                                                   "<<endl;
+    cout<<"                                                                             -T.Nisha Fathima      "<<endl;
+    cout<<"                                                                             -19PT14               "<<endl;
+    cout<<"                                                                                                   "<<endl;
+    cout<<"      "<<endl;
+    cout<<"      "<<endl;
     system("pause");
     system("cls");
     home:
-    cout<<" _________________________________________________________________ \n";
-    cout<<"|                                           	                     |\n";
-    cout<<"|             1  >> Add New Patient Record                        |\n";
-    cout<<"|             2  >> View Patient Report                           |\n";
-    cout<<"|             3  >> Exit Application                              |\n";
-    cout<<" _________________________________________________________________ \n";
+    cout<<" _ \n";
+    cout<<"                                           	                     \n";
+    cout<<"             1  >> Add New Patient Record                        \n";
+    cout<<"             2  >> View Patient Report                           \n";
+    cout<<"             3  >> Exit Application                              \n";
+    cout<<" _ \n";
     cout<<"\n Enter your choice :";
     cin>>ch1;
-    while( (ch1<1) || (ch1>3) )
+    while( (ch1<1)  (ch1>3) )
     {
         cout<<"Invalid Entry."<<endl;
         cout<<" Enter your choice :";
@@ -57,20 +57,20 @@ using namespace std;
         N.GetValidData();
         N.BMICalculator();
         home2:
-        cout<<" _________________________________________________________________ \n";
-        cout<<"|                                           	                     |\n";
-        cout<<"|             1  >> Generate BMI Report                           |\n";
-        cout<<"|             2  >> View Recommended Food Timings                 |\n";
-        cout<<"|             3  >> View Diet Plan                                |\n";
-        cout<<"|             4  >> View Workout Plan                             |\n";
-        cout<<"|             5  >> Add Daily Activity                            |\n";
-        cout<<"|             6  >> Return to Home Page                           |\n";
-        cout<<" _________________________________________________________________ \n";
+        cout<<" _ \n";
+        cout<<"                                           	                     \n";
+        cout<<"             1  >> Generate BMI Report                           \n";
+        cout<<"             2  >> View Recommended Food Timings                 \n";
+        cout<<"             3  >> View Diet Plan                                \n";
+        cout<<"             4  >> View Workout Plan                             \n";
+        cout<<"             5  >> Add Daily Activity                            \n";
+        cout<<"             6  >> Return to Home Page                           \n";
+        cout<<" _ \n";
         cout<<"\n Enter your choice : ";
         cin>>ch2;
         system("pause");
         system("cls");
-        while(ch2<1 || ch2>6)
+        while(ch2<1  ch2>6)
         {
             cout<<"Invalid Entry."<<endl;
             cout<<" Enter your choice : ";
@@ -132,13 +132,13 @@ using namespace std;
 		else
 		{
 		    std::string info;
-                cout<<"--------------------------------------------------------------------------"<<endl;
+                cout<<""<<endl;
 			while(file.good())
 			{
                 getline(file,info);
                 cout<<info<<"\n";
 			}
-             cout<<"--------------------------------------------------------------------------"<<endl;
+             cout<<""<<endl;
 
 			system("pause");
 			system("cls");
