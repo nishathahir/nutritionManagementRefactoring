@@ -6,8 +6,12 @@
 class CalorieCount
 {
     private:
-        int SnNo,BrNo,LuNo,DiNo,miles;
-        char ch[2];
+        int SnNo;
+        int BrNo;
+        int LuNo;
+        int DiNo;
+        int miles;
+        std::string ch;
         static float CalCons;
         static float CalsBurnt;
         Nutrition N;
