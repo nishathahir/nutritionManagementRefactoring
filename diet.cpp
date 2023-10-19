@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void Diet::Risk()
+void Diet::Risk() const
 {
     system("open");
     ifstream file;
@@ -104,7 +104,7 @@ void Diet::Risk()
     }
     system("pause");
 }
-void Diet::FoodTimings()
+void Diet::FoodTimings() const
 {
     system("open");
     cout<<"\n";
@@ -129,7 +129,7 @@ void Diet::FoodTimings()
     system("cls");
 }
 
-void Diet::DietChart()
+void Diet::DietChart() const
 {
     std::string categoryPrefix = (Nutrition::FoodCategory == 1) ? "v_" : "nv_";
     std::string flagPrefix = "";
