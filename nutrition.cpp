@@ -122,7 +122,6 @@ void Nutrition::GetValidData()
 void Nutrition::BMICalculator()
 {
     ofstream PatientFile;
-    int ch;
     BMI=Weight/(Height*Height);
     cout<<"\n\t\t\t\t Your BMI is :"<<BMI<<endl;
     if(BMI<16)

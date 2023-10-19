@@ -8,15 +8,15 @@ class Nutrition
     private:
         std::string Name;
         std::string Address;
-        char ContactNo[12];
-        char Sex[5];
-        char FileName[10];
+        std::string ContactNo;
+        std::string Sex;
+        std::string FileName;
         int Age;
         float Height;
         float Weight;
         int BloodPressure;
         float BMI;
-        char FoodPreferred[5];
+        std::string FoodPreferred;
         friend class Diet;
     public:
         void GetValidData();
