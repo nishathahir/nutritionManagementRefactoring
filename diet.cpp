@@ -131,7 +131,7 @@ void Diet::FoodTimings()
 
 void Diet::DietChart()
 {
-    std::string categoryPrefix = (N.FoodCategory == 1) ? "v_" : "nv_";
+    std::string categoryPrefix = (Nutrition::FoodCategory == 1) ? "v_" : "nv_";
     std::string flagPrefix = "";
 
     if (Nutrition::Flag == 1)
