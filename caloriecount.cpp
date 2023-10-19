@@ -14,7 +14,7 @@ void CalorieCount::CalorieConsumed()
     cout<<"\t\t\tEnter the Serial No. of the diet you consumed :"<<endl;
     cout<<"\t\t\tBreakfast :";
     cin>>BrNo;
-    while (BrNo<1 || BrNo>7)
+    while (BrNo<1 || BrNo>8)
     {
         cout<<"\t\t\tInvalid Entry"<<endl;
         cout<<"\t\t\tBreakfast :";
