@@ -124,10 +124,7 @@ main() {
       }
 
       
-    case 3:
-      system("cls");
-      break;
-  }
+   
 
   return 0;
 }
