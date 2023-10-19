@@ -4,7 +4,6 @@
 #include"caloriecount.h"
 #include <array>
 
-using namespace std;
 
 float CalorieCount::CalCons=0;
 float CalorieCount::CalsBurnt=0;
@@ -18,14 +17,14 @@ void CalorieCount::CalorieConsumed()
 
     for (int i = 0; i < 4; ++i)
     {
-        cout << "\t\t\tEnter the Serial No. of " << mealNames[i] << " :";
-        cin >> mealChoices[i];
+        std::cout << "\t\t\tEnter the Serial No. of " << mealNames[i] << " :";
+        std::cin >> mealChoices[i];
 
         while (mealChoices[i] < 1 || mealChoices[i] > 7)
         {
-            cout << "\t\t\tInvalid Entry" << endl;
-            cout << "\t\t\tEnter the Serial No. of " << mealNames[i] << " :";
-            cin >> mealChoices[i];
+            std::cout << "\t\t\tInvalid Entry" << endl;
+            std::cout << "\t\t\tEnter the Serial No. of " << mealNames[i] << " :";
+            std::cin >> mealChoices[i];
         }
 
         // Update CalCons based on Nutrition::Flag and Nutrition::FoodCategory
@@ -47,27 +46,27 @@ static const std::array<std::array<std::array<float, 7>, 2>, 3> CalorieTable = {
 
 void CalorieCount::CalorieBurnt()
 {
-    cout<<"\t\t\tDid you workout (y/n)?";
-    cin>>ch;
+    std::cout<<"\t\t\tDid you workout (y/n)?";
+    std::cin>>ch;
     while((strcmp("n",ch)!=0)&&(strcmp("y",ch)!=0))
     {
-        cout<<"\t\t\tInvalid Entry"<<endl;
-        cout<<"\t\t\tDid you workout (y\n)?";
-        cin>>ch;
+        std::cout<<"\t\t\tInvalid Entry"<<endl;
+        std::cout<<"\t\t\tDid you workout (y\n)?";
+        std::cin>>ch;
     }
-    cout<<"\t\t\tMiles Walked :";
-    cin>>miles;
+    std::cout<<"\t\t\tMiles Walked :";
+    std::cin>>miles;
     while((miles<0)||(miles>40))
     {
-        cout<<"\t\t\tInvalid Entry"<<endl;
-        cout<<"\t\t\tMiles walked :";
-        cin>>miles;
+        std::cout<<"\t\t\tInvalid Entry"<<endl;
+        std::cout<<"\t\t\tMiles walked :";
+        std::cin>>miles;
     }
     if (strcmp("n",ch)==0)
     {
-        cout<<"\t\t\tIf you're eating the right food and keeping fit, your body will be strong and help you to cope with stress and also fight illness."<<endl;
-        cout<<"\t\t\tEating well and exercising often when you're a teenager will also help you stay in good health later in life."<<endl;
-        cout<<"\t\t\tTry to be regular in your exercise. "<<endl;
+        std::cout<<"\t\t\tIf you're eating the right food and keeping fit, your body will be strong and help you to cope with stress and also fight illness."<<endl;
+        std::cout<<"\t\t\tEating well and exercising often when you're a teenager will also help you stay in good health later in life."<<endl;
+        std::cout<<"\t\t\tTry to be regular in your exercise. "<<endl;
     }
     else if (strcmp("y",ch)==0)
     {
@@ -83,10 +82,10 @@ void CalorieCount::CalorieBurnt()
 
 void CalorieCount::CalorieReport()
 {
-    cout<<"\n\t\t\tCalorie Intake :"<<CalCons;
-    cout<<"\n\t\t\tCalories Burnt in Walking :"<<miles*80;
-    cout<<"\n\t\t\tCalories Burnt in Workout :"<<CalsBurnt;
-    cout<<endl;
+    std::cout<<"\n\t\t\tCalorie Intake :"<<CalCons;
+    std::cout<<"\n\t\t\tCalories Burnt in Walking :"<<miles*80;
+    std::cout<<"\n\t\t\tCalories Burnt in Workout :"<<CalsBurnt;
+    std::cout<<endl;
 }
 
 
