@@ -4,7 +4,6 @@
 #include"diet.cpp"
 #include"nutrition.cpp"
 #include"workout.cpp"
-#include<windows.h>
 
 using namespace std;
 
@@ -17,21 +16,6 @@ using namespace std;
     Workout W;
     CalorieCount C;
     system("Color 0A");
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
     cout<<"\t\t\t\t    ________________________________________________________________________________________________   "<<endl;
     cout<<"\t\t\t\t                                                                                                       "<<endl;
     cout<<"\t\t\t\t    ------------------------------------------------------------------------------------------------   "<<endl;
@@ -50,21 +34,6 @@ using namespace std;
     cout<<"\t\t\t\t   ________________________________________________________________________________________________   "<<endl;
     system("pause");
     system("cls");
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
     home:
     cout<<"\t\t\t\t\t\t _________________________________________________________________ \n";
     cout<<"\t\t\t\t\t\t|                                           	                     |\n";
@@ -87,21 +56,6 @@ using namespace std;
         N.GetValidData();
         N.BMICalculator();
         home2:
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
-        cout<<endl;
         cout<<"\t\t\t\t\t\t _________________________________________________________________ \n";
         cout<<"\t\t\t\t\t\t|                                           	                     |\n";
         cout<<"\t\t\t\t\t\t|             1  >> Generate BMI Report                           |\n";
@@ -177,21 +131,6 @@ using namespace std;
 		else
 		{
 		    std::string info;
-                        cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
-                cout<<endl;
                 cout<<"\t\t\t\t\t\t--------------------------------------------------------------------------"<<endl;
 			while(file.good())
 			{
