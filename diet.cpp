@@ -9,7 +9,7 @@ void Diet::Risk()
 {
     system("open");
     ifstream file;
-    if (N.Flag==1)
+    if (Nutrition::Flag==1)
     {
         file.open("underweight_risk.txt");
         if(!file)
@@ -40,7 +40,7 @@ void Diet::Risk()
             file.close();
         }
     }
-    else if (N.Flag==2)
+    else if (Nutrition::Flag==2)
     {
         file.open("normal_maintain.txt");
         if(!file)
@@ -71,7 +71,7 @@ void Diet::Risk()
             file.close();
         }
     }
-    else if (N.Flag==3)
+    else if (Nutrition::Flag==3)
     {
         file.open("overweight_risk.txt");
         if(!file)
@@ -131,130 +131,40 @@ void Diet::FoodTimings()
 
 void Diet::DietChart()
 {
-    system("open");
-    ifstream file;
-    if (N.FoodCategory==1)
-    {
-        if (N.Flag==1)
-        {
-            file.open("underweight_v_diet.txt");
-            if(!file)
-            {
-                cout<<"\nERROR"<<endl;
-                cout<<"File Not Found"<<endl;
-            }
-            else
-            {
-                string line;
-                while(file.good())
-                {
-                    getline(file,line);
-                    cout<<"\n"<<line<<endl;
-                }
-                file.close();
-            }
-        }
-        else if (N.Flag==2)
-        {
-            file.open("normal_v_diet.txt");
-            if(!file)
-            {
-                cout<<"\nERROR"<<endl;
-                cout<<"File Not Found"<<endl;
-            }
-            else
-            {
-                string line;
-                while(file.good())
-                {
-                    getline(file,line);
-                    cout<<"\n"<<line<<endl;
-                }
-                file.close();
-            }
-        }
-        else if (N.Flag==3)
-        {
-            file.open("overweight_v_diet.txt");
-            if(!file)
-            {
-                cout<<"\nERROR"<<endl;
-                cout<<"File Not Found"<<endl;
-            }
-            else
-            {
-                string line;
-                while(file.good())
-                {
-                    getline(file,line);
-                    cout<<"\n"<<line<<endl;
-                }
-                file.close();
-            }
-        }
+    std::string categoryPrefix = (N.FoodCategory == 1) ? "v_" : "nv_";
+    std::string flagPrefix = "";
 
-    }
-    if(N.FoodCategory==2)
+    if (Nutrition::Flag == 1)
+        flagPrefix = "underweight_";
+    else if (Nutrition::Flag == 2)
+        flagPrefix = "normal_";
+    else if (Nutrition::Flag == 3)
+        flagPrefix = "overweight_";
+    else
     {
-        if (N.Flag==1)
-        {
-            file.open("underweight_nv_diet.txt");
-            if(!file)
-            {
-                cout<<"\nERROR"<<endl;
-                cout<<"File Not Found"<<endl;
-            }
-            else
-            {
-                string line;
-                while(file.good())
-                {
-                    getline(file,line);
-                    cout<<"\n"<<line<<endl;
-                }
-                file.close();
-            }
-        }
-        else if (N.Flag==2)
-        {
-            file.open("normal_nv_diet.txt");
-            if(!file)
-            {
-                cout<<"\nERROR"<<endl;
-                cout<<"File Not Found"<<endl;
-            }
-            else
-            {
-                string line;
-                while(file.good())
-                {
-                    getline(file,line);
-                    cout<<"\n"<<line<<endl;
-                }
-                file.close();
-            }
-        }
-        else if (N.Flag==3)
-        {
-            file.open("overweight_nv_diet.txt");
-            if(!file)
-            {
-                cout<<"\nERROR"<<endl;
-                cout<<"File Not Found"<<endl;
-            }
-            else
-            {
-                string line;
-                while(file.good())
-                {
-                    getline(file,line);
-                    cout<<"\n"<<line<<endl;
-                }
-                file.close();
-            }
-        }
-
+        std::cout << "Invalid Flag!" << std::endl;
+        return;
     }
+
+    std::string fileName = flagPrefix + categoryPrefix + "diet.txt";
+
+    std::ifstream file(fileName);
+
+    if (!file)
+    {
+        std::cout << "\nERROR" << std::endl;
+        std::cout << "File Not Found" << std::endl;
+        return;
+    }
+
+    std::string line;
+    while (getline(file, line))
+    {
+        std::cout << "\n" << line << std::endl;
+    }
+
+    file.close();
+
     system("pause");
 }
 
