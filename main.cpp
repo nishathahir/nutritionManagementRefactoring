@@ -8,7 +8,8 @@
 using namespace std;
 
 main() {
-  int ch1, ch2;
+  int ch1;
+  int ch2;
   std::string fname;
   Nutrition N;
   Diet D;
@@ -45,7 +46,6 @@ main() {
       N.GetValidData();
       N.BMICalculator();
 
-      home2:
       cout << "             " << endl;
       cout << "             1  >> Generate BMI Report                           " << endl;
       cout << "             2  >> View Recommended Food Timings                 " << endl;
@@ -71,28 +71,28 @@ main() {
           D.Risk();
           system("pause");
           system("cls");
-          goto home2;
+          
         case 2:
           D.FoodTimings();
-          goto home2;
+          
         case 3:
           D.DietChart();
           system("cls");
-          goto home2;
+          
         case 4:
           W.workout_plan();
-          goto home2;
+          
         case 5:
           C.CalorieConsumed();
           C.CalorieBurnt();
           C.CalorieReport();
           system("pause");
           system("cls");
-          goto home2;
+          
         case 6:
           system("pause");
           system("cls");
-          goto home;
+          
       }
       break;
     case 2:
@@ -107,7 +107,7 @@ main() {
         cout << "\n\n\nFile Not Found!";
         system("pause");
         system("cls");
-        goto home;
+        
       } else {
         std::string info;
         cout << "" << endl;
@@ -123,7 +123,7 @@ main() {
         system("cls");
       }
 
-      goto home;
+      
     case 3:
       system("cls");
       break;
