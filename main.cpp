@@ -42,15 +42,12 @@ using namespace std;
         N.GetValidData();
         N.BMICalculator();
         home2:
-        cout<<" _ \n";
-        cout<<"                                           	                     \n";
         cout<<"             1  >> Generate BMI Report                           \n";
         cout<<"             2  >> View Recommended Food Timings                 \n";
         cout<<"             3  >> View Diet Plan                                \n";
         cout<<"             4  >> View Workout Plan                             \n";
         cout<<"             5  >> Add Daily Activity                            \n";
         cout<<"             6  >> Return to Home Page                           \n";
-        cout<<" _ \n";
         cout<<"\n Enter your choice : ";
         cin>>ch2;
         system("pause");
