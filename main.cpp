@@ -9,14 +9,15 @@ using namespace std;
 
  main()
 {
-    int ch1,ch2;
-    char fname[20];
+    int ch1;
+    int ch2;
+    std::string fname;
     Nutrition N;
     Diet D;
     Workout W;
     CalorieCount C;
     system("Color 0A");
-    cout<<"\t\t\t\t    ________________________________________________________________________________________________   "<<endl;
+    cout << "\t\t\t\t\t\t|                                            \t                     |\n";
     cout<<"\t\t\t\t                                                                                                       "<<endl;
     cout<<"\t\t\t\t    ------------------------------------------------------------------------------------------------   "<<endl;
     cout<<"\t\t\t\t   |                                                                                                |"<<endl;
@@ -31,16 +32,16 @@ using namespace std;
     cout<<"\t\t\t\t   |                                                                          -19PT14               |"<<endl;
     cout<<"\t\t\t\t   |                                                                                                |"<<endl;
     cout<<"\t\t\t\t   ------------------------------------------------------------------------------------------------   "<<endl;
-    cout<<"\t\t\t\t   ________________________________________________________________________________________________   "<<endl;
+    cout << "\t\t\t\t\t\t|                                            \t                     |\n";
     system("pause");
     system("cls");
     home:
-    cout<<"\t\t\t\t\t\t _________________________________________________________________ \n";
+    cout << "\t\t\t\t\t\t|                                            \t                     |\n";
     cout<<"\t\t\t\t\t\t|                                           	                     |\n";
     cout<<"\t\t\t\t\t\t|             1  >> Add New Patient Record                        |\n";
     cout<<"\t\t\t\t\t\t|             2  >> View Patient Report                           |\n";
     cout<<"\t\t\t\t\t\t|             3  >> Exit Application                              |\n";
-    cout<<"\t\t\t\t\t\t _________________________________________________________________ \n";
+    cout << "\t\t\t\t\t\t|                                            \t                     |\n";
     cout<<"\n\t\t\t\t\t\t Enter your choice :";
     cin>>ch1;
     while( (ch1<1) || (ch1>3) )
