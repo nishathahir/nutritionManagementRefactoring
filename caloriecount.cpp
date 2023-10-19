@@ -2,6 +2,7 @@
 #include<cstring>
 #include<fstream>
 #include"caloriecount.h"
+#include <array>
 
 using namespace std;
 
@@ -12,8 +13,8 @@ void CalorieCount::CalorieConsumed()
 {
     D->DietChart();
     
-    int mealChoices[4];
-    string mealNames[4] = {"Breakfast", "Lunch", "Dinner", "Snacks"};
+    std::array<int, 4> mealChoices;
+    std::vector<std::string> mealNames = {"Breakfast", "Lunch", "Dinner", "Snacks"};
 
     for (int i = 0; i < 4; ++i)
     {
@@ -36,7 +37,7 @@ void CalorieCount::CalorieConsumed()
 }
 
 // Define a static 3D array for calorie values
-static const float CalorieTable[3][2][7] = {
+static const std::array<std::array<std::array<float, 7>, 2>, 3> CalorieTable = {
     {
         {{304, 320, 280, 278, 270, 265, 286}, {300, 401, 438, 370, 320, 370, 340}},
         {{300, 240, 280, 280, 281, 264, 350}, {417, 300, 400, 450, 387, 350, 420}}
@@ -80,7 +81,7 @@ void CalorieCount::CalorieBurnt()
     }
 }
 
-void const CalorieCount::CalorieReport()
+void CalorieCount::CalorieReport()
 {
     cout<<"\n\t\t\tCalorie Intake :"<<CalCons;
     cout<<"\n\t\t\tCalories Burnt in Walking :"<<miles*80;
