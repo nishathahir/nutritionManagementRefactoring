@@ -20,17 +20,6 @@ void Diet::Risk() const
         {
             string line;
             std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
             while(file.good())
             {
                 getline(file,line);
@@ -82,18 +71,6 @@ void Diet::Risk() const
         {
             string line;
             std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            std::cout<<"\n";
-            while(file.good())
             {
                 getline(file,line);
                 std::cout<<"\n\t\t\t\t"<<line<<endl;
@@ -106,7 +83,6 @@ void Diet::Risk() const
 void Diet::FoodTimings() const
 {
     system("open");
-    std::cout<<"\n";
     std::cout<<"\n";
     std::cout<<"\n\t\t\t\t--------------------------------------------------BEST TIME TO EAT--------------------------------------------------"<<endl;
     std::cout<<"\n\t\t\t\tBreakfast :"<<endl;
